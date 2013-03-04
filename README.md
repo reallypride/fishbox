@@ -1,5 +1,8 @@
 # FishBox #
 FishBox is a jQuery plugin use for display iframe and html content.
+
+Example: [http://www.ifishblog.com/fishbox/](http://www.ifishblog.com/fishbox/)
+
 ## How to use ##
 
 ----------

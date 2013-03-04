@@ -134,7 +134,11 @@
 		if(current_options.top) {
 			top = current_options.top;
 		} else {
-			top = ($('body').scrollTop() + $(window).height() - height) / 2;
+			var sctop = 0;
+			if(isIE6) {
+				sctop = $('body').scrollTop()||document.documentElement.scrollTop;
+			}
+			top = (sctop + $(window).height() - height) / 2;
 			top = Math.abs(top);
 		}
 		if($.isNumeric(width)) {
